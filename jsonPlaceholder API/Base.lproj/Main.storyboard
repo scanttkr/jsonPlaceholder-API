@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="post" title="Post" id="BYZ-38-t0r" customClass="PostController" customModule="jsonPlaceholder_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-Wr-6A9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vTm-9W-QN0"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wJ3-El-OND"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="3zn-EH-D6n"/>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EZ8-1Y-GUS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vqX-Wr-6A9" secondAttribute="bottom" id="GZJ-6R-QN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vqX-Wr-6A9" secondAttribute="trailing" id="fwc-ZS-Uze"/>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="lL0-Hb-Gep"/>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="org-Ha-IAv"/>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="spI-FE-ERq"/>
+                            <constraint firstItem="vqX-Wr-6A9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="v2k-bX-kiy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="vqX-Wr-6A9" id="h89-Rv-VqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+</document>
